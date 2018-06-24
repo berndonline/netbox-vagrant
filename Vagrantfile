@@ -17,7 +17,7 @@ Vagrant.configure("2") do |config|
     end
   config.vm.synced_folder '.', '/vagrant', disabled: true
 
-  config.vm.network :forwarded_port, guest: 80, host: 2333, id: 'http'
+  config.vm.network :forwarded_port, guest: 80, host: 4333, id: 'http'
   config.vm.provision :shell, path: "bootstrap.sh"
 end
 end
